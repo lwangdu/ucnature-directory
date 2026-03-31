@@ -11,7 +11,7 @@ Block-friendly staff directory plugin for UC Nature sites. It provides a dedicat
 
 == Description ==
 
-UC Nature Directory adds a public-facing directory powered by a custom post type and block-friendly rendering.
+UC Nature Directory adds a public-facing directory powered by a custom post type and ACF block-friendly rendering plugin.
 
 Features include:
 
