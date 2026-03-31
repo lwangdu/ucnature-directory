@@ -1,0 +1,43 @@
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained","contentSize":"900px"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|20"}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+<!-- wp:heading {"level":1,"metadata":{"bindings":{"content":{"source":"ucnature-directory/contact-field","args":{"key":"display_name"}}}}} -->
+<h1 class="wp-block-heading">Name</h1>
+<!-- /wp:heading -->
+
+<!-- wp:ucnature/contact-meta-detail {"label":"Title","metaKey":"job_title"} /-->
+
+<!-- wp:ucnature/contact-meta-detail {"label":"Email","metaKey":"primary_email"} /-->
+
+<!-- wp:ucnature/contact-meta-detail {"label":"Phone","metaKey":"phone"} /-->
+
+<!-- wp:ucnature/contact-meta-detail {"label":"Cell","metaKey":"cell_phone"} /-->
+
+<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"0.5rem"}}} -->
+<div class="wp-block-group">
+<!-- wp:ucnature/contact-taxonomy-detail {"label":"Campus","taxonomy":"ucn_campus"} /-->
+
+<!-- wp:ucnature/contact-taxonomy-detail {"label":"Reserve","taxonomy":"ucn_reserve"} /-->
+
+<!-- wp:ucnature/contact-taxonomy-detail {"label":"Role","taxonomy":"ucn_general_role"} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"ucnature-directory/contact-field","args":{"key":"address_string"}}}}} -->
+<p></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+</div>
+<!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer"} /-->

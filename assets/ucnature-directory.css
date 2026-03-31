@@ -1,0 +1,170 @@
+.ucn-directory__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 1.5rem;
+}
+
+.ucn-directory-card {
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: #fff;
+	max-width: 450px;
+	width: 100%;
+}
+
+.ucn-directory-card > * {
+	margin-top: 0;
+	margin-bottom: 0.55rem;
+}
+
+.ucn-directory-card > *:last-child {
+	margin-bottom: 0;
+}
+
+.ucn-directory-card__title {
+	margin-bottom: 0.45rem;
+}
+
+.ucn-directory-card__job-title {
+	margin-bottom: 0.5rem;
+}
+
+.ucn-directory__filters {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+	gap: 1rem;
+	margin-bottom: 2rem;
+	padding: 1.25rem;
+	border: 1px solid #d8dde3;
+	border-radius: 12px;
+	background: #f7f9fb;
+}
+
+.ucn-directory__field label {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: 600;
+}
+
+.ucn-directory__field input,
+.ucn-directory__field select {
+	width: 100%;
+	height: 52px;
+	min-height: 52px;
+	padding: 0 0.85rem;
+	line-height: 1.2;
+	border: 1px solid #b8c4d1;
+	border-radius: 8px;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.ucn-directory__field input:focus-visible,
+.ucn-directory__field select:focus-visible,
+.ucn-directory__actions button:focus-visible,
+.ucn-directory__reset:focus-visible,
+.ucn-directory-card a:focus-visible,
+.ucn-contact-single a:focus-visible,
+.ucn-directory__results:focus-visible {
+	outline: 3px solid #0b4870;
+	outline-offset: 2px;
+}
+
+.ucn-directory__actions {
+	display: flex;
+	gap: 1rem;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.ucn-directory__actions button {
+	min-height: 46px;
+	padding: 0.75rem 1.4rem;
+	border: 0;
+	border-radius: 8px;
+	background: #0b4870;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.ucn-directory__actions button:hover,
+.ucn-directory__actions button:focus {
+	background: #083a5a;
+}
+
+.ucn-directory__reset {
+	display: inline-flex;
+	align-items: center;
+	min-height: 46px;
+	padding: 0 0.25rem;
+	color: #0b4870;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.ucn-directory__reset:hover,
+.ucn-directory__reset:focus {
+	text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+	.ucn-directory__filters {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.ucn-directory__actions {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 640px) {
+	.ucn-directory__filters {
+		grid-template-columns: 1fr;
+	}
+}
+
+.ucn-directory-group + .ucn-directory-group {
+	margin-top: 3rem;
+}
+
+.ucn-directory-group__title {
+	margin-bottom: 1rem;
+}
+
+.ucn-directory__results[aria-busy="true"] {
+	opacity: 0.7;
+}
+
+.ucn-contact-single-wrap {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+
+.ucn-contact-single {
+	background: #fff;
+	border-radius: 8px;
+	padding: 2rem;
+}
+
+.ucn-contact-single__title {
+	margin-top: 0;
+	margin-bottom: 0.75rem;
+}
+
+.ucn-contact-single__job-title,
+.ucn-contact-single__email,
+.ucn-contact-single__phone,
+.ucn-contact-single__cell,
+.ucn-contact-single__campus,
+.ucn-contact-single__reserve,
+.ucn-contact-single__address {
+	margin-bottom: 1rem;
+}
+
+.ucn-contact-single__content {
+	margin-top: 2rem;
+}
